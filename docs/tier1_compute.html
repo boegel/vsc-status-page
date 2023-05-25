@@ -20,20 +20,20 @@
         
         <h2>Current incidents</h2>
         
-        <h3><a id="incident_0021">Scheduled maintenance Tier-1 Hortense</a></h3>
+        <h3><a id="incident_0001">Unstable cooling of Tier1 Hortense</a></h3>
 
 <table>
     <tr>
         <td><span class="td_name">Start:</span></td>
-        <td>2023-03-06 07:00:00</td>
+        <td>2023-03-28 17:20:00</td>
     </tr>
     <tr>
         <td><span class="td_name">End:</span></td>
-        <td>2023-03-15 20:00:00</td>
+        <td>Unknown</td>
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2023-03-10 16:39:06</td>
+        <td>2023-03-31 14:26:56</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -41,16 +41,39 @@
     </tr>
 </table>
 
-<p>A maintenance period is required to expand Tier-1 Hortense with (much) more hardware, roughly doubling the capacity of the system.</p>
-<p><strong>Impacted:</strong> all login nodes, all compute nodes and the shared scratch filesystem will be offline.</p>
-<p><strong>Update Fri 10 March 2023 - 15:00</strong></p>
-<p> Unfortunately, maintenance work to Tier-1 Hortense is not completed yet. Currently, the machine is not yet released by the vendor. After that, still quite a bit of validating work and stress testing is needed before we can safely release the cluster.
-We expect to be able and release a stable system in the course of next week. It goes without saying that we are trying our best to speed up availability for the users as much as possible. </p>
+<p>We are experiencing cooling problems on Tier1 Hortense. Thus far, the reason is unknown. We are investigating the problem together with the vendor.</p>
+<p><strong>Impacted:</strong> entire racks might go down, thereby interrupting jobs running on the affected nodes. Users will have to restart their lost jobs.</p>
+<p><strong>Update Thu 30 March 2023 - 16:00</strong></p>
 
         
         <h2>Planned maintenance</h2>
         
-        <p>No maintenance planned currently.</p>
+        <h3><a id="incident_0020">test of UGent datacenter S10 Disaster Recovery Procedure (DRP)</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2023-07-11 08:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>2023-07-11 20:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2023-05-25 20:18:49</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>high</td>
+    </tr>
+</table>
+
+<p>On Tuesday 11 July 2023, a planned test of the UGent datacenter S10 Disaster Recovery Procedure (DRP) will take place.</p>
+<p>As a result, there will temporarily be <strong>no network access to all infrastructure hosted in UGent datacenter S10</strong>.</p>
+<p>This includes Tier-1 login nodes + web portal, HPC-UGent Tier-2 login nodes + web portal, as well as the VSC accountpage <https://account.vscentrum.be>).</p>
+<p>It should <em>not</em> affect running jobs, unless they require access to outside world (which will not work).<br/> Internal network + access to shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*) from jobs on the system will be unaffected.</p>
+
         
         <hr/>
         <p class="navigation">
