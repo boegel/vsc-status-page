@@ -57,7 +57,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-10-08 07:32:23</td>
+        <td>2026-10-08 10:03:18</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -65,6 +65,7 @@
     </tr>
 </table>
 
+<p> <strong>Thu 8 Oct 2026, 10:00 CEST</strong></br> HPC-UGent Tier-2 clusters are operational again since 09:00 CEST.</br> We are working on restoring remaining infrastructure (Tier-1 Hortense, Tier-1 Cloud). </p>
 <p> <strong>Thu 8 Oct 2026, 07:30 CEST</strong></br> Power outage was resolved last night (~22:25 CEST), but the electrical power feed to the HPC infrastructure could not be restored yet because this requires signfiicant care to be taken to do it safely.</br> Technicians are currently looking into restoring the power feed ASAP.</br> </p>
 <p> <strong>Wed 7 Oct 2026, 21:40 CEST</strong></br> There may be some minimal impact on Tier-1 Cloud as well, some virtual machines may be unavailable.</br> The Lustre shared scratch filesystem on Tier-1 Hortense is unstable currently, as a result of network switches being unavailable.</br> </p>
 <p> <strong>Wed 7 Oct 2026, 20:55 CEST</strong></br> A campus wide power outage has occurred at Ghent University campus Sterre, where the UGent datacenter is located.</br> As a result, all workernodes in the HPC-UGent Tier-2 and Tier-1 Hortense clusters are unavailable.</br> Login nodes and shared filesystems should remain available, but additional impact may be possible. </p>
@@ -72,7 +73,37 @@
         
         <h2>Planned maintenance</h2>
         
-        <p>No maintenance planned currently.</p>
+        <h3><a id="incident_0140">Tier-1 sofia - Data center planned maintenance</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2026-10-28 08:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>2026-10-28 18:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2026-10-08 00:10:27</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>high</td>
+    </tr>
+</table>
+
+<p> The data center hosting Tier-1 <b>sofia</b> will carry out power maintenance tests on October 28th. This exercise serves to test the failover systems of the data center in case of a total power cut and for <b>sofia</b> implies a full shut-down of the cluster for the duration of the test. </p>
+<p> The following services will not be available during the shutdown:
+  <ul>
+    <li>OnDemand web portal at https://portal.sofia.vub.be/</li>
+    <li>Terminal interface through login nodes</li>
+    <li>Globus endpoint for sofia</li>
+  </ul>
+</p>
+<p> We will use this opportunity to carry out system updates on <b>sofia</b> and other maintenace tasks that cannot easily be done with the cluster online. A reservation is in place to ensure that no jobs will be running at the time of shutdown. Queued jobs will stay in the queue and will be automatically launched as soon as the cluster is back online. </p>
+
         
         <hr/>
         <p class="navigation">
